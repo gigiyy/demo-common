@@ -9,37 +9,13 @@
         <version>3.1.5</version>
         <relativePath/>
     </parent>
-   <groupId>com.sample</groupId>
+    <groupId>com.sample</groupId>
     <artifactId>demo-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
     <name>parent</name>
     <description>parent project for demo application</description>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.dailycodebuffer.example.SpringBootCustomParen.SpringBootCustomParentApplication</mainClass>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
     <properties>
         <java.version>17</java.version>
     </properties>
